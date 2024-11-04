@@ -26,7 +26,11 @@ class CocoaPodsToolchainDirectoryMigration extends ProjectMigrator {
   final XcodeProjectInterpreter _xcodeProjectInterpreter;
 
   @override
+<<<<<<< HEAD
   void migrate() {
+=======
+  Future<void> migrate() async {
+>>>>>>> 603104015dd692ea3403755b55d07813d5cf8965
     if (!_podRunnerTargetSupportFiles.existsSync()) {
       logger.printTrace('CocoaPods Pods-Runner Target Support Files not found, skipping TOOLCHAIN_DIR workaround.');
       return;
